@@ -1,0 +1,146 @@
+/* GLOBALS */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+sub {
+  margin: 17px;
+}
+
+/* SOME EXTRA STYLES */
+.main {
+  margin-top: 20px;
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main img {
+  width: 300px;
+  border-radius: 7px;
+}
+
+.main > * {
+  margin: 21px;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc button {
+  background-color: pink;
+  padding: 7px 24px;
+  font-weight: 700;
+  border-radius: 7px;
+}
+
+.desc button:hover {
+  background-color: rgb(245, 140, 158);
+}
+
+.desc button:active {
+  background-color: rgb(255, 37, 73);
+}
+
+.button {
+  border-radius: 4px;
+  background-color: blue;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+.button:hover {
+  background-color: rgb(2, 2, 182);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border-top: 1px solid #ffefef;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  margin: 10px;
+}
+
+.footer .change::after {
+  width: 10ch;
+  content: "Me!";
+}
+
+.footer .change:hover::after {
+  background-color: rgba(255, 172, 200, 0.391);
+  border-radius: 7px;
+  content: "Hachikoi!";
+}
+
+/* special icons in footer */
+.footer p + p a span::after {
+  width: 20px;
+  content: "👩‍💻";
+}
+
+.footer .icons::after {
+  width: 10px;
+  content: "🧠🤍🖖";
+}
+
+/* utility classes */
+.extraPadding {
+  padding: 25px;
+}
+
+.relPosition {
+  position: relative;
+}
+
+/* 0 - 800px */
+@media (max-width: 800px) {
+  .main {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main img {
+    width: 200px;
+  }
+}
