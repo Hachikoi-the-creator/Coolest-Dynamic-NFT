@@ -1,4 +1,4 @@
-export const CONTRACT_ADDRESS = "0xacFd0f27823296183E2e2017C457339358e00c60";
+export const CONTRACT_ADDRESS = "0xa20d0400309A1f54F7e3acd31A90d38e71802E75";
 export const CONTRACT_ABI = [
   {
     "inputs": [
@@ -304,6 +304,19 @@ export const CONTRACT_ABI = [
     "name": "performUpkeep",
     "outputs": [],
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "priceFeed",
+    "outputs": [
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
     "type": "function"
   },
   {
