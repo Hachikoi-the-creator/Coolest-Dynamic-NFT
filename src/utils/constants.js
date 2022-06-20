@@ -1,10 +1,10 @@
-export const CONTRACT_ADDRESS = "0xa20d0400309A1f54F7e3acd31A90d38e71802E75";
+export const CONTRACT_ADDRESS = "0x8Aee920633a5627371e1fCE2FfcF0Fa33d2600a4";
 export const CONTRACT_ABI = [
   {
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_updateInterval",
+        "name": "updateInterval",
         "type": "uint256"
       }
     ],
@@ -78,6 +78,19 @@ export const CONTRACT_ABI = [
       }
     ],
     "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "marketTrend",
+        "type": "string"
+      }
+    ],
+    "name": "TokensUpdated",
     "type": "event"
   },
   {
@@ -167,6 +180,19 @@ export const CONTRACT_ABI = [
     "type": "function"
   },
   {
+    "inputs": [],
+    "name": "currentPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
     "inputs": [
       {
         "internalType": "uint256",
@@ -193,6 +219,19 @@ export const CONTRACT_ABI = [
         "internalType": "int256",
         "name": "",
         "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "indexCounter",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
       }
     ],
     "stateMutability": "view",
@@ -330,7 +369,7 @@ export const CONTRACT_ABI = [
     "inputs": [
       {
         "internalType": "address",
-        "name": "_to",
+        "name": "to",
         "type": "address"
       }
     ],
@@ -487,25 +526,6 @@ export const CONTRACT_ABI = [
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "tokenToUser",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
         "name": "tokenId",
         "type": "uint256"
       }
@@ -571,8 +591,14 @@ export const CONTRACT_ABI = [
     "type": "function"
   },
   {
-    "inputs": [],
-    "name": "updateUriWhitCounter",
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newInterval",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateInterval",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

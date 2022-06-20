@@ -34,10 +34,15 @@ export default function App() {
       <main className="main">
         <img src={nftsGif} alt="All the variants of th dynamic NFT" />
         <div className="desc">
-          <h1>Some stuff</h1>
-          <p>MY thingy</p>
+          <h1>Dynamic NFT</h1>
+          <p>
+            Don't you feel the unsopable urge to get this amazing NFT? it
+            changes every 24hrs... automatically! it can also work as a reminder
+            os how much you have lost in your BTC investments! since it depends
+            in the price of BTC!
+          </p>
           <button onClick={mintNFT}>MINT ME!</button>
-          <sub>Make sure you are using Testnet Rinkeby!</sub>
+          <sub>Pss, Make sure you are using Testnet Rinkeby!</sub>
         </div>
       </main>
 
@@ -50,7 +55,7 @@ export default function App() {
         </p>
         <p>
           Source code:{" "}
-          <a href="#">
+          <a href="https://github.com/Hachikoi-the-creator/Coolest-Dynamic-NFT">
             <span></span>
           </a>
         </p>
